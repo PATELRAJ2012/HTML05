@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+            
+        }
+      .container {
+        background-color: aqua;
+        width: 725px;
+        border: 4px solid black;
+      }
+      input,
+      textarea {
+        width: 500px;
+        height: 50px;
+
+      }
+      #gender {
+        width: 100px;
+        height: 25px;
+        margin: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        min-width: 108px;
+        
+      }
+      select {
+        margin: 10px;
+      }
+      #Specialization {
+        width: 50px;
+        height: 15px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .button {
+        width: 100px;
+        height: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registaration Form</h1>
+      <div>
+        <label for="Firstname">First Name:</label>
+        <input type="text" id="Firstname" placeholder="Enter your first name" />
+      </div>
+      <div>
+        <label for="Lastname">Last Name:</label>
+        <input type="text" id="Lastname" placeholder="Enter your last name" />
+      </div>
+      <div>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" placeholder="enter your email" />
+      </div>
+      <div>
+        <label for="Mobile">Mobile:</label>
+        <input
+          type="text"
+          id="Mobile"
+          placeholder="only 10 digits are allowed" pattern="[0-9{2,8}]" required
+        />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" /> Male
+        <input type="radio" id="gender" name="gender" /> Female
+      </div>
+      <div>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy" />
+        <br />
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="City">City:</label>
+        <input type="text" id="City" />
+      </div>
+      <div>
+        <label for="Area PIN">Area PIN:</label>
+        <input type="text" id="Area PIN" />
+      </div>
+      <div>
+        <label for="State">State:</label>
+        <input type="text" id="State" />
+      </div>
+      <div>
+        <label for="Qualification">Qualification:</label>
+        <select name="Qualification" id="Qualification">
+          <option value="">select Qualification</option>
+          <option value="">B.com</option>
+          <option value="">B.B.A</option>
+          <option value="">B.C.A</option>
+          <option value="">B.sc</option>
+        </select>
+      </div>
+      <div>
+        <label for="Specialization">Specialization:</label> <br />
+        <input type="checkbox" name="Specialization" id="Specialization" />
+        computer science <br />
+        <input type="checkbox" name="Specialization" id="Specialization" />
+        information tecnology <br />
+        <input type="checkbox" name="Specialization" id="Specialization" />
+        computer architecture <br />
+        <input type="checkbox" name="Specialization" id="Specialization" /> Tele
+        comunication <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" /> <br />
+       
+        <input class="button" type="button" value="submit">
+      </div>
+    </div>
+  </body>
+</html>
